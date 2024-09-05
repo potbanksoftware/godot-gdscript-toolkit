@@ -834,10 +834,10 @@ def _format_dot_chain_to_multiple_lines(
     expression_context: ExpressionContext,
     context: Context,
 ) -> FormattedLines:
-    if is_expression_forcing_multiple_lines(dot_chain, context.standalone_comments):
-        return _format_operator_chain_based_expression_to_multiple_lines(
-            dot_chain, expression_context, context
-        )
+    # if is_expression_forcing_multiple_lines(dot_chain, context.standalone_comments):
+    #     return _format_operator_chain_based_expression_to_multiple_lines(
+    #         dot_chain, expression_context, context
+    #     )
     lines_formatted_bottom_up = _format_dot_chain_to_multiple_lines_bottom_up(
         dot_chain, expression_context, context
     )
